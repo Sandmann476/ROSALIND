@@ -1,9 +1,19 @@
+def rabbit_population(n, k=1):
+    if n <= 0:
+        return 0
+    elif n == 1 or n == 2:
+        return 1  # Starting with 1 pair of rabbits
 
-def rabbit_pop(k,n = 0, i = 1):
-    if n == 6:
-        print(i)
-    else:
-        i = i + k * (i - n*k)
-        return rabbit_pop(k, n + 1, i)
+    population = [0] * (n + 1)
+    population[1] = 1  # First month with 1 pair
+    population[2] = 1  # Second month with 1 pair
+    
+    for i in range(3, n + 1):
+        population[i] = population[i-1] + k * population[i-2]
+    
+    return population[n]
 
-rabbit_pop(3)
+n = 32  # number of months
+k = 4   # Number of new pairs each mature rabbit pair produces
+total_pairs = rabbit_population(n, k)
+print(f"Total number of rabbit pairs after {n} months: {total_pairs}")
