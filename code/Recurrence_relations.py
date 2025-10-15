@@ -1,10 +1,9 @@
 
-def rabbit_pop(n, k, i = 1):
-    if n == 1:
+def rabbit_pop(k,n = 0, i = 1):
+    if n == 6:
         print(i)
     else:
-        i = i + k * (i - i//k)
-        return rabbit_pop(n - 1, k, i)
+        i = i + k * (i - n*k)
+        return rabbit_pop(k, n + 1, i)
 
-rabbit_pop(5, 3)
-print(1//3)
+rabbit_pop(3)
