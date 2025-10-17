@@ -1,11 +1,13 @@
-infile = open('data/rosalind_gc (2).txt', 'r')
+infile = open('data/rosalind_gc (4).txt', 'r')
 gc_count = 0
 length = 0
 for line in infile:
-    #line = line.strip()
+    line = line.strip()
     if line[0] == '>':
         if length > 0:
             print((gc_count/length)*100)
+            length = 0
+            gc_count = 0
         print(line)
     else :
         length += len(line)
