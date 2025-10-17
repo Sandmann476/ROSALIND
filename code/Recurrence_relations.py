@@ -13,7 +13,6 @@ def rabbit_population(n, k=1):
     
     return population[n]
 
-n = 32  # number of months
-k = 4   # Number of new pairs each mature rabbit pair produces
-total_pairs = rabbit_population(n, k)
-print(f"Total number of rabbit pairs after {n} months: {total_pairs}")
+n = 5  # number of months
+k = 3   # Number of new pairs each mature rabbit pair produces
+print(rabbit_population(n, k))
