@@ -16,11 +16,5 @@ def rabbit_population(n, m):
 
     return sum(ages)
 
-def livemortalrabbirs(months, lifetime):
-    ages = [1] + [0]*(lifetime-1)
-    for i in range(months-1):
-        ages = [sum(ages[1:])] + ages[:-1]
-
-    return sum(ages)
 
 print(rabbit_population(95, 20))
