@@ -11,7 +11,7 @@ def rabbit_population(n, k=1):
     for i in range(3, n + 1):
         population[i] = population[i-1] + k * population[i-2]
     
-    return population[n]
+    return population[n + 1]
 
 n = 5  # number of months
 k = 3   # Number of new pairs each mature rabbit pair produces
