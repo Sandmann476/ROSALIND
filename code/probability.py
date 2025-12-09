@@ -20,4 +20,4 @@ def probability_dominant(k, m, n):
     return prob_dominant
 
 
-print(probability_dominant(22, 28, 18))
+print(probability_dominant(29, 15, 24))

@@ -1,4 +1,4 @@
-parents_genotype = [16129, 18528, 19548, 17310, 18444, 19710]
+parents_genotype = [17765, 19755, 16352, 17898, 18101, 16553]
 dom_phentype_offspring = 0
 
 for i in range(len(parents_genotype)):

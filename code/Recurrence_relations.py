@@ -1,4 +1,4 @@
-def rabbit_population(n, k=1):
+def rabbit_population(n, k):
     if n <= 0:
         return 0
     elif n == 1 or n == 2:
@@ -11,8 +11,8 @@ def rabbit_population(n, k=1):
     for i in range(3, n + 1):
         population[i] = population[i-1] + k * population[i-2]
     
-    return population[n + 1]
+    return population[n]
 
-n = 5  # number of months
+n = 31  # number of months
 k = 3   # Number of new pairs each mature rabbit pair produces
 print(rabbit_population(n, k))

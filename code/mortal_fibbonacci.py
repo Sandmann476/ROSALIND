@@ -1,4 +1,4 @@
-def rabbit_population(n, m):
+def wabbit_population(n, m):
     if n <= 0:
         return 0
     if m <= 0:
@@ -17,4 +17,4 @@ def rabbit_population(n, m):
     return sum(ages)
 
 
-print(rabbit_population(95, 20))
+print(wabbit_population(86, 19))

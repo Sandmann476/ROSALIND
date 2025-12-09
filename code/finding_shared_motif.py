@@ -1,4 +1,4 @@
-data = open("data/rosalind_lcsm (1).txt")
+data = open("data/rosalind_lcsm.txt")
 
 def parse_fasta(fasta_str):
     sequences = []

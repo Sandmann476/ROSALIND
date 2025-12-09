@@ -1,4 +1,4 @@
-infile = open('data/rosalind_gc (4).txt', 'r')
+infile = open('data/rosalind_gc (3).txt', 'r')
 gc_count = 0
 length = 0
 for line in infile:

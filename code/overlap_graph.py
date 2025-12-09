@@ -1,4 +1,4 @@
-data = open("data/rosalind_grph (1).txt")
+data = open("data/rosalind_grph.txt")
 
 def read_fasta(data):
     fasta = {}

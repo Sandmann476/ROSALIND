@@ -1,4 +1,4 @@
-fasta_input = open('data/rosalind_cons (2).txt').read()
+fasta_input = open('data/rosalind_cons (1).txt').read()
 
 def parse_fasta(fasta_str):
     sequences = []
