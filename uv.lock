@@ -587,6 +587,7 @@ source = { virtual = "." }
 dependencies = [
     { name = "networkx" },
     { name = "numpy" },
+    { name = "requests" },
     { name = "scrapy" },
 ]
 
@@ -594,6 +595,7 @@ dependencies = [
 requires-dist = [
     { name = "networkx", specifier = ">=3.5" },
     { name = "numpy", specifier = ">=2.3.3" },
+    { name = "requests", specifier = ">=2.32.5" },
     { name = "scrapy", specifier = ">=2.13.4" },
 ]
 
