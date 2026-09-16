@@ -1,7 +1,8 @@
 
-infile = open("/home/flo/Desktop/code/ROSALIND/data/rosalind_lgis (2).txt", "r")
+infile = open("/home/florian-gruber/Programming/ROSALIND/data/rosalind_lgis.txt", "r")
 sequence = infile.read().split()
-sequence = [int(x) for x in sequence]
+sequence_con = [int(x) for x in sequence[1:]]
+
 
 
 def longest_increasing_subsequence(seq):
@@ -90,9 +91,16 @@ def longest_decreasing_subsequence(seq):
         pos = previous_index[pos]
     return results[::-1] #reversing
 
-for n in longest_increasing_subsequence(sequence):
-    print(n, end=" ")
-print("\n")
-for n in longest_decreasing_subsequence(sequence):
-    print(n, end=" ")
-print("\n")
+longest_inc = ""
+longest_dec = ""
+for n in longest_increasing_subsequence(sequence_con):
+    longest_inc += str(n) + " "
+print(longest_inc)
+for n in longest_decreasing_subsequence(sequence_con):
+    longest_dec += str(n) + " "
+print(longest_dec)
+
+f = open("/home/florian-gruber/Programming/ROSALIND/data/rosalind_lgis_1_output.txt", "w")
+f.write(longest_inc + "\n")
+f.write(longest_dec)
+f.close()

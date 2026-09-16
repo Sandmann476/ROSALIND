@@ -8,5 +8,6 @@ dependencies = [
     "networkx>=3.5",
     "numpy>=2.3.3",
     "requests>=2.32.5",
+    "scipy>=1.18.1",
     "scrapy>=2.13.4",
 ]

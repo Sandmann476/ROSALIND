@@ -1,5 +1,5 @@
 
-data = open("/home/florian/Downloads/rosalind_long(1).txt", "r").read()
+data = open("/home/florian/Downloads/rosalind_long_1_dataset.txt", "r").read()
 
 def parse_fasta(fasta_str):
     sequences = []
